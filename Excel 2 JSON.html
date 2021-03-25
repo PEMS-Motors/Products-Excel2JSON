@@ -1,0 +1,27 @@
+<html>
+
+  <head>
+    <title>Excel 2 JSON</title>
+    <script src='components/main.js' defer></script>
+    <link rel='stylesheet' href='components/style.css' />
+  </head>
+
+  <body>
+    <img src='components/pemslogo.png' />
+    <h1>Excel to JSON Product File</h1>
+    <p>This program will convert an appropriately formatted Excel file into a JSON Products file.</p>
+    <ol>
+      <li>
+        <p>Save your Excel file as a <b>text (tab delimited) (.txt) file</b></p>
+      </li>
+      <li>
+        <p>Select the <b>text (tab delimited) (.txt) file</b></p>
+        <input id='inputFiles' type='file' multiple />
+      </li>
+      <li>
+        <p>Click the <b>Start</b> button to convert the selected files</p>
+        <button id='startButton' disabled onclick='XL2JSON.Start();'>Start</button>
+      </li>
+    </ol>
+  </body>
+</html>
